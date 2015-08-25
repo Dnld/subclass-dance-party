@@ -2,6 +2,8 @@ var ZigZagDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   this.top = top;
   this.left = left;
+  this.$node.removeClass('dancer');
+  this.$node.addClass('dancer-2');
 };
 
 ZigZagDancer.prototype = Object.create(Dancer.prototype);
@@ -18,6 +20,5 @@ ZigZagDancer.prototype.step = function() {
   this.top = this.top + randomRange(-10, 10);
   this.left = this.left + randomRange(-10, 10);
   // set position with top and left
-  
   this.setPosition(this.top, this.left);
 };
