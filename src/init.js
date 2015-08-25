@@ -32,12 +32,14 @@ $(document).ready(function(){
   });
 
   $(".lineUpDancersButton").on("click", function(event) {
+    var firstDancer = Math.floor(Math.random() * window.dancers.length);
+    var secondDancer = Math.floor(Math.random() * window.dancers.length);
     
     for (var i = 0; i < window.dancers.length; i++) {
-      if (i === 0) {
+      if (i === firstDancer) {
         window.dancers[i].left = $("body").width() / 2 + 50;
         window.dancers[i].top = $("body").height() / 2;
-      } else if (i === 1) {
+      } else if (i === secondDancer) {
         window.dancers[i].left = $("body").width() / 2;
         window.dancers[i].top = $("body").height() / 2 + 50;
       } else if (i % 2 === 0) {
