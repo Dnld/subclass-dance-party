@@ -9,9 +9,6 @@ ZigZagDancer.prototype.constructor = ZigZagDancer;
 ZigZagDancer.prototype.oldStep = Dancer.prototype.step;
 ZigZagDancer.prototype.step = function() {
   this.oldStep();
-  
-  // hide the existing node
-  this.$node.hide();
   // calculate new top and left
 
   var randomRange = function(minNum, maxNum){
@@ -23,7 +20,4 @@ ZigZagDancer.prototype.step = function() {
   // set position with top and left
   
   this.setPosition(this.top, this.left);
-  
-  // show the node
-  this.$node.show();
 };
