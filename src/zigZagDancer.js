@@ -1,7 +1,5 @@
 var ZigZagDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.top = top;
-  this.left = left;
   this.$node.removeClass('dancer');
   this.$node.addClass('dancer-2');
 };

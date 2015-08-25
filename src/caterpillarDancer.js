@@ -1,8 +1,6 @@
 var CaterpillarDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   this.steps = 0;
-  this.top = top;
-  this.left = left;
   var randomRange = function(minNum, maxNum){
     return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
   };
