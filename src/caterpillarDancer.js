@@ -8,6 +8,9 @@ var CaterpillarDancer = function(top, left, timeBetweenSteps) {
   };
   this.increment = randomRange(-10, 10);
   this.direction = (Math.random() * 2) > 1 ? 'left' : 'top';
+  this.$node.removeClass('dancer');
+  this.$node.addClass('dancer-3');
+  this.$node.append('<img src="src/Caterpie.png" height= "50" width= "50"></img>');
 };
 
 CaterpillarDancer.prototype = Object.create(Dancer.prototype);

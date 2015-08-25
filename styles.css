@@ -25,3 +25,11 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.dancer-2{
+  border:10px solid blue;
+  position:absolute;
+}
+.dancer-3{
+  border:0px;
+  position:absolute;
+}
