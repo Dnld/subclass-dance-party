@@ -50,7 +50,10 @@ $(document).ready(function(){
       window.dancers[i].setPosition(window.dancers[i].top, 
       window.dancers[i].left);
     }
-    
+  });
+
+  $(".ballPassButton").on("click", function(event){
+    $('.beachball').css('display', 'block');
   });
 
 });
