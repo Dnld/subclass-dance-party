@@ -9,6 +9,9 @@ var CaterpillarDancer = function(top, left, timeBetweenSteps) {
   this.$node.removeClass('dancer');
   this.$node.addClass('dancer-3');
   this.$node.append('<img src="src/Caterpie.png" height= "50" width= "50"></img>');
+  this.$node.on('mouseenter', function(event){
+    $(this).find('img').attr('src', 'src/Travolta.jpg');
+  });
 };
 
 CaterpillarDancer.prototype = Object.create(Dancer.prototype);
