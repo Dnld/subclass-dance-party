@@ -9,7 +9,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton, .lineUpDancersButton, .ballPassButton{
+.title, .addDancerButton, .lineUpDancersButton, .pairDancerButton{
   padding:5px 12px;
   float:right;
 }
@@ -35,4 +35,6 @@ body, a:link, a:visited, a:active{
 }
 .beachball{
   display: none;
+  left: 0;
+  top: 0;
 }

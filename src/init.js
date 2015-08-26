@@ -52,9 +52,34 @@ $(document).ready(function(){
     }
   });
 
-  $(".ballPassButton").on("click", function(event){
-    $('.beachball').css('display', 'block');
-  });
+// pairDancerButton incomplete
+  // $(".pairDancerButton").on("click", function(event){
+  //   for(var i = 0; i < window.dancers.length; i++){
+  //     var newHeight = $("body").height() * Math.random();
+  //     var newWidth = $("body").width() * Math.random();
+  //     var constructor1 = window.dancers[i].constructor;
+  //     var timeBetweenSteps1 = window.dancers[i].timeBetweenSteps;
+      // var dancer = window.dancers[i].$node;
+      // $('body').remove(dancer.$node);
+      // delete window.dancers[i];
+      // if(constructor1 === BlinkyDancer){
+      //   var newBlinky = new BlinkyDancer(newHeight, newWidth, timeBetweenSteps1);
+      //   $("body").append(newBlinky.$node);
+      //   window.dancers.splice(i, 1, newBlinky);
+      // }else if(constructor1 === ZigZagDancer){
+      //   var newZigZag = new ZigZagDancer(newHeight, newWidth, timeBetweenSteps1);
+      //   $("body").append(newZigZag.$node);
+      //   window.dancers.splice(i, 1, newZigZag);
+      // }else{
+      //   var newCaterpillar = new CaterpillarDancer(newHeight, newWidth, timeBetweenSteps1);
+      //   $("body").append(newCaterpillar.$node);
+      //   window.dancers.splice(i, 1, newCaterpillar);
+      // }
+
+      // window.dancers[i].setPosition(newHeight, newWidth);
+      // window.dancers[++i].setPosition(newHeight, newWidth);
+  //   }
+  // });
 
 });
 
